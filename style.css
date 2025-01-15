@@ -1,0 +1,248 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.blue-line {
+    height: 5px; /* Altura de la línea */
+    background-color: #009edb; /* Color azul */
+    margin: 0; /* Sin margen */
+}
+
+/* Encabezado superior */
+.top-bar {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top-bar .home-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.top-bar .languages a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.top-bar .languages .active {
+    font-weight: bold;
+}
+/* Barra principal */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    height: 60px;
+    margin-right: 15px;
+    border-right: black solid 1px;
+}
+
+.logo-section h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.logo-section p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 8px;
+}
+
+.search button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navegación principal */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    margin: 0 15px;
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.bory p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px 40px;
+    font-size: large;
+}
+
+
+
+/* Estilos del footer */
+.footer {
+    margin: auto;
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    background-color: #333; /* Fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado interno */
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+}
+
+/* Parte superior del footer */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo y título */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo {
+    height: 40px; /* Tamaño del logo */
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Iconos sociales */
+.footer-socials a {
+    margin: 0 10px;
+}
+
+.footer-socials img {
+    height: 20px; /* Tamaño de los iconos */
+    width: 20px;
+}
+
+/* Botón de donaciones */
+.footer-donation button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-donation button:hover {
+    background-color: #005fa3; /* Efecto hover */
+}
+
+/* Línea divisoria */
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: #555; /* Color de la línea */
+    margin: 10px 0;
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.footer-bottom span {
+    color: #555; /* Separador entre enlaces */
+}
+/* Carrusel */
+/* Contenedor del Swiper */
+.swiper {
+    width: 100%; /* Ajusta el ancho del carrusel */
+    height: 300px; /* Ajusta la altura */
+    margin: auto; /* Centrar en la página */
+    border: 2px solid #ddd; /* Opcional: borde */
+    border-radius: 10px; /* Esquinas redondeadas */
+    overflow: hidden;
+    
+}
+
+/* Imágenes del carrusel */
+.swiper-slide img {
+    width: 100%; /* Asegura que las imágenes llenen el slide */
+    height: 100%; /* Ocupan todo el alto */
+    object-fit: cover; /* Evita distorsiones y recorta si es necesario */
+}
+
+/* Responsividad */
+@media screen and (max-width: 480px) {
+    .swiper {
+        width: 100%; 
+        height: 550px; 
+    }
+} 
