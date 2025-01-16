@@ -310,6 +310,26 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+        margin: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Espacio entre los elementos */
+    }
+    
+    nav a {
+        font-weight: 20;
+        text-decoration: none;
+        color: #ffffff; /* Cambia el color según el diseño */
+    }
+    .actions{
+        display: none;
+    }
+
     /* Carrusel principal */
     .swiper {
         height: 200px; /* Reduce la altura del carrusel en móviles */
