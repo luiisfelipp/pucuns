@@ -122,6 +122,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 .bory p{
     font-family: 'Courier New', Courier, monospace;
     margin: 40px 40px;
@@ -239,10 +240,131 @@ nav a:hover {
     object-fit: cover; /* Evita distorsiones y recorta si es necesario */
 }
 
-/* Responsividad */
-@media screen and (max-width: 480px) {
+
+/* Carrusel Noticias y Eventos */
+
+/* Estilos para el nuevo carrusel */
+.custom-carousel {
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    align-items: center; /* Asegura que esté alineado verticalmente (si aplica) */
+    background-color: #fff; /* Opcional: color de fondo para distinguir el área */
+    padding: 20px 0; /* Ajusta el espacio superior e inferior */
+}
+
+.swiper-custom {
+    width: 75%;
+    height: 530px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.swiper-custom .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-custom .text-section {
+    flex: 1;
+}
+
+.swiper-custom .text-section .category {
+    color: #8a2be2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.swiper-custom .text-section .date {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.swiper-custom .text-section h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.swiper-custom .text-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.swiper-custom .text-section .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077cc;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.swiper-custom .text-section .read-more:hover {
+    text-decoration: underline;
+}
+
+.swiper-custom .image-section {
+    flex: 1;
+}
+
+.swiper-custom .image-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+@media (max-width: 768px) {
+    /* Carrusel principal */
     .swiper {
-        width: 100%; 
-        height: 550px; 
+        height: 200px; /* Reduce la altura del carrusel en móviles */
     }
-} 
+
+    .swiper-slide img {
+        object-fit: scale-down; /* Ajusta las imágenes al espacio disponible sin recortar */
+    }
+
+    /* Carrusel de noticias y eventos */
+    .swiper-custom {
+        width: 100%; /* Ocupa todo el ancho del dispositivo */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    .swiper-custom .slide-content {
+        flex-direction: column; /* Apila imagen y texto verticalmente */
+        gap: 10px; /* Espacio entre imagen y texto */
+    }
+
+    .swiper-custom .image-section {
+        width: 100%; /* La imagen ocupará todo el ancho */
+    }
+
+    .swiper-custom .image-section img {
+        width: 100%; /* Asegura que la imagen sea responsiva */
+        height: auto; /* Mantiene las proporciones */
+    }
+
+    .swiper-custom .text-section {
+        text-align: center; /* Centra el texto */
+    }
+
+    .swiper-custom .text-section h2 {
+        font-size: 16px; /* Ajusta el tamaño del título en móviles */
+    }
+
+    .swiper-custom .text-section p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+
+    .swiper-custom .text-section .read-more {
+        font-size: 14px; /* Ajusta el tamaño del enlace */
+    }
+}
