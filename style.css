@@ -297,19 +297,6 @@ nav a:hover {
     color: #555;
 }
 
-.swiper-custom .text-section .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0077cc;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.swiper-custom .text-section .read-more:hover {
-    text-decoration: underline;
-}
-
 .swiper-custom .image-section {
     flex: 1;
 }
