@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 
     <title>PUCUNS</title>
 </head>
@@ -14,9 +16,9 @@
 <body>
     <div class="top-bar">
         <a href="#" class="home-link">🏠 Bienvenidos a PUCUNS</a>
-        
+
         <div id="google_translate_element"></div>
-        
+
         <!-- <div class="languages">
             <a href="#" data-lang="ar">العربية</a>
             <a href="#" data-lang="zh-CN">中文</a>
@@ -25,7 +27,7 @@
             <a href="#" data-lang="ru">Русский</a>
             <a href="#" data-lang="es" class="active">Español</a>
         </div> -->
-               
+
     </div>
     <div class="blue-line"></div>
 
@@ -47,10 +49,10 @@
 
     <nav>
         <ul>
-            <li><a href="/about-us">La organización</a></li>
-            <li><a href="/our-work">Qué hacemos</a></li>
-            <li><a href="/news">Eventos y noticias</a></li>
-            <li><a href="/get-involved">Participa</a></li>
+            <li><a href="#about-us">La organización</a></li>
+            <li><a href="#our-work">Qué hacemos</a></li>
+            <li><a href="#news">Eventos y noticias</a></li>
+            <li><a href="#open-modal" id="open-modal">Contacto</a></li>
         </ul>
     </nav>
 
@@ -65,84 +67,147 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptate? Dolor doloremque praesentium, fugiat repellendus nemo aperiam ipsa ipsam laboriosam rem voluptatibus nobis ut corrupti tempore! Omnis repellendus maxime quae necessitatibus adipisci non recusandae architecto sequi sunt aliquid? </p>
-    <!-- Carrusel noticias y eventos -->
-    <section class="custom-carousel">
-        <div class="swiper swiper-custom">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <div class="text-section">
-                            <span class="category">Historia</span>
-                            <span class="date">06 septiembre 2023</span>
-                            <h2>Los ODS en terreno: Impulsando la soberanía alimentaria.</h2>
-                            <p>
-                                Rapa Nui, declarada Patrimonio de la Humanidad por UNESCO en 1995, recibe anualmente cerca de 
-                                120 mil turistas y está ubicada a 3,700 kilómetros del continente sudamericano, lo que la 
-                                convierte en la isla más remota del planeta.
-                            </p>
-                        </div>
-                        <div class="image-section">
-                            <img src="imagenes/4.png" alt="Soberanía alimentaria en Rapa Nui">
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <div class="text-section">
-                            <span class="category">Noticias</span>
-                            <span class="date">15 octubre 2023</span>
-                            <h2>Reducción de emisiones: Proyectos sostenibles en América Latina</h2>
-                            <p>
-                                Iniciativas locales en la región están logrando un impacto global mediante la reforestación y 
-                                la promoción de fuentes de energía renovable.
-                            </p>
-                        </div>
-                        <div class="image-section">
-                            <img src="imagenes/4.png" alt="Proyectos sostenibles en América Latina">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Agrega más slides si es necesario -->
+        <section class="about-us" id="about-us">
+            <div class="about-us-text">
+                <h1>¿Quiénes somos?</h1>
+                <div class="blue-line-bory"></div>
+                <p>Somos una organización estudiantil que tiene como misión promover el diálogo, la cooperación y la
+                    paz; en base al debate, las relaciones internacionales y la diplomacia. Nuestro foco y
+                    funcionamiento está en el modelo de las Naciones Unidas, MUN por sus siglas en inglés.</p>
+                <p>Participamos en modelos internacionales y la organización de modelos nacionales, realizamos charlas
+                    informativas y talleres para nuestros miembros y la comunidad PUC.</p>
             </div>
-    
-            <!-- Botones de navegación -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        </section>
+        <section class="our-work" id="our-work">
+            <div class="mision">
+                <h1>Misión:</h1>
+                <div class="blue-line-bory"></div>
+                <p>En PUCUNS nos comprometemos a formar a futuros líderes en diplomacia y relaciones internacionales,
+                    cultivando un entorno de aprendizaje dinámico, colaborativo e inclusivo. Nuestra misión es empoderar
+                    a nuestros miembros y alumni para que se conviertan en agentes de cambio globales, promoviendo el
+                    diálogo intercultural, la resolución pacífica de conflictos y el desarrollo sostenible en un mundo
+                    cada vez más interconectado.</p>
+            </div>
+            <div class="manifiesto">
+                <h1>Manifiesto:</h1>
+                <div class="blue-line-bory"></div>
+                <p>En PUCUNS creemos que el diálogo es clave para construir puentes entre ideas, personas y culturas.
+                    Las juventudes tienen el poder de convertir desafíos en oportunidades mediante la cooperación y la
+                    acción colectiva. Desde nuestros inicios, hemos creado espacios inclusivos donde la diversidad, el
+                    pensamiento crítico y los derechos humanos son los pilares de nuestras acciones. Sin alinearnos con
+                    credos o ideologías políticas específicas, reconocemos su valor en la construcción de sociedades más
+                    justas, guiados siempre por el entendimiento mutuo.</p>
+                <p>Nuestro compromiso es formar líderes jóvenes que transformen ideas en realidades y generen cambios
+                    positivos desde lo local hacia lo global. </p>
+                <p>Trabajamos para acercar las Naciones Unidas a las juventudes, empoderándolas como protagonistas de un
+                    cambio sostenible. PUCUNS es una organización que convierte ideales en acción, guiado por la paz, la
+                    empatía y la sostenibilidad, con la visión de un futuro donde las diferencias fortalezcan nuestras
+                    soluciones y la cooperación impulse un mundo más unido.</p>
+            </div>
+        </section>
+
+        <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Formulario de Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input placeholder="Ingrese su nombre" type="text" id="name" name="name" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="topic" name="asunto" required>
+                <option value="" disabled selected>Selecciona un tema</option>
+                <option value="Consulta general">Consulta general</option>
+                <option value="Quiero participar">Quiero participar</option>
+                <option value="Quiero colaborar">Quiero colaborar</option>
+                <option value="Otro asunto">Otro</option>
+
+                <label for="email">Correo electrónico:</label>
+                <input placeholder="ejemplo@correo.com" type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </section>
-       
+    </div>
+
         
+        <!-- Carrusel noticias y eventos -->
+        <section class="custom-carousel" id="news">
+            <div class="swiper swiper-custom">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="text-section">
+                                <span class="category">PUCUNS</span>
+                                <span class="date">20 enero 2024</span>
+                                <h2>Nueva página oficial de PUCUNS</h2>
+                                <p>
+                                    Hoy 20 de enero de 2024, en el V° aniversario de PUC Chile United Nations Society, tenemos el agrado de anunciarles que lanzamos nuestra página web, en la cual estaremos informando de noticias, eventos, entre otros, con la cual podrán conocer un poco más sobre la organización.
+                                </p>
+                            </div>
+                            <div class="image-section">
+                                <img src="imagenes/logo1.png" alt="Soberanía alimentaria en Rapa Nui">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <div class="text-section">
+                                <span class="category">PUCUNS</span>
+                                <span class="date">20 enero 2024</span>
+                                <h2>Nueva página oficial de PUCUNS</h2>
+                                <p>
+                                    Hoy 20 de enero de 2024, en el V° aniversario de PUC Chile United Nations Society, tenemos el agrado de anunciarles que lanzamos nuestra página web, en la cual estaremos informando de noticias, eventos, entre otros, con la cual podrán conocer un poco más sobre la organización.
+                                </p>
+                            </div>
+                            <div class="image-section">
+                                <img src="imagenes/logo1.png" alt="Soberanía alimentaria en Rapa Nui">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botones de navegación -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </section>
 
     <footer class="footer">
-    <div class="footer-top">
-        <!-- Sección izquierda: Logo y nombre -->
-        <div class="footer-logo">
-            <img src="imagenes/logo2.png" alt="Logo Naciones Unidas" class="logo">
-            <span>PUCUNS</span>
+        <div class="footer-top">
+            <!-- Sección izquierda: Logo y nombre -->
+            <div class="footer-logo">
+                <img src="imagenes/logo2.png" alt="Logo Naciones Unidas" class="logo">
+                <span>PUCUNS</span>
+            </div>
+            <!-- Sección central: Iconos sociales -->
+            <div class="footer-socials">
+                <a
+                    href="https://www.linkedin.com/company/pucuns-pontificia-universidad-cat%C3%B3lica-united-nations-society/"><img
+                        src="imagenes/linkedin.png" alt="Linkedin"></a>
+                <a href="#"><img src="imagenes/gorjeo.png" alt="X"></a>
+                <!-- <a href="#"><img src="imagenes/whatsapp.png" alt="WhatsApp"></a> -->
+                <a href="https://www.instagram.com/puc.uns/"><img src="imagenes/instagram.png" alt="Instagram"></a>
+            </div>
+            <!-- Sección derecha: Botón -->
+            <div class="footer-donation">
+                <button>Donaciones</button>
+            </div>
         </div>
-        <!-- Sección central: Iconos sociales -->
-        <div class="footer-socials">
-            <a href="https://www.linkedin.com/company/pucuns-pontificia-universidad-cat%C3%B3lica-united-nations-society/"><img src="imagenes/linkedin.png" alt="Linkedin"></a>
-            <a href="#"><img src="imagenes/gorjeo.png" alt="X"></a>
-            <!-- <a href="#"><img src="imagenes/whatsapp.png" alt="WhatsApp"></a> -->
-            <a href="https://www.instagram.com/puc.uns/"><img src="imagenes/instagram.png" alt="Instagram"></a>
-        </div>
-        <!-- Sección derecha: Botón -->
-        <div class="footer-donation">
-            <button>Donaciones</button>
-        </div>
-    </div>
-    <!-- Línea divisoria -->
-    <hr class="footer-divider">
-    <!-- Menú inferior -->
-    <div class="footer-bottom">
-        <!-- <a href="#">Alerta de fraude</a>
+        <!-- Línea divisoria -->
+        <hr class="footer-divider">
+        <!-- Menú inferior -->
+        <div class="footer-bottom">
+            <!-- <a href="#">Alerta de fraude</a>
         <span>|</span>
         <a href="#">Comuníquese con nosotros</a>
         <span>|</span>
@@ -155,13 +220,18 @@
         <a href="#">Propiedad intelectual</a>
         <span>|</span>
         <a href="#">Índice del sitio</a> -->
-        Hecho por @luiisfelipp
-    </div>
-</footer>
+            Hecho por @luiisfelipp
+        </div>
+    </footer>
 
-<script src="script.js"></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+    
+    
 
 
 </body>
+
 </html>
