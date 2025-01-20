@@ -11,6 +11,23 @@ function googleTranslateElementInit() {
     );
 }
 
+//Mesa directiva
+// Seleccionar el botón y el contenedor de imágenes
+const toggleButton = document.getElementById("toggle-gallery");
+const imageGallery = document.getElementById("image-gallery");
+
+// Alternar la visibilidad del contenedor de imágenes al hacer clic
+toggleButton.addEventListener("click", () => {
+    if (imageGallery.style.display === "none" || imageGallery.style.display === "") {
+        imageGallery.style.display = "grid"; // Mostrar la galería
+        toggleButton.textContent = "Ocultar"; // Cambiar texto del botón
+    } else {
+        imageGallery.style.display = "none"; // Ocultar la galería
+        toggleButton.textContent = "¡Conócenos!"; // Cambiar texto del botón
+    }
+});
+
+
 // Configuración del Swiper
 const swiper = new Swiper('.swiper', {
     navigation: {
