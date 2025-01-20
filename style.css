@@ -335,8 +335,7 @@ form button:hover {
     margin: auto; /* Centrar en la página */
     border: 2px solid #ddd; /* Opcional: borde */
     border-radius: 10px; /* Esquinas redondeadas */
-    overflow: hidden;
-    
+   
 }
 
 /* Imágenes del carrusel */
@@ -360,7 +359,7 @@ form button:hover {
 
 .swiper-custom {
     width: 75%;
-    height: 530px; /* Ajusta la altura según tus necesidades */
+    height: 100%; /* Ajusta la altura según tus necesidades */
     overflow: hidden;
 }
 
@@ -403,16 +402,8 @@ form button:hover {
     color: #555;
 }
 
-.swiper-custom .image-section {
-    flex: 1;
-}
-
-.swiper-custom .image-section img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-
+.swiper-custom img{
+    object-fit: none;
 }
 
 @media (max-width: 768px) {
@@ -438,11 +429,11 @@ form button:hover {
 
     /* Carrusel principal */
     .swiper {
-        height: 150px; /* Reduce la altura del carrusel en móviles */
+        height: 100%; /* Reduce la altura del carrusel en móviles */
     }
 
     .swiper-slide img {
-        object-fit: scale-down; /* Ajusta las imágenes al espacio disponible sin recortar */
+        object-fit: scale-down;
     }
 
     /* Carrusel de noticias y eventos */
