@@ -331,7 +331,7 @@ form button:hover {
 /* Contenedor del Swiper */
 .swiper {
     width: 100%; /* Ajusta el ancho del carrusel */
-    height: 300px; /* Ajusta la altura */
+    height: 400px; /* Ajusta la altura */
     margin: auto; /* Centrar en la página */
     border: 2px solid #ddd; /* Opcional: borde */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -438,7 +438,7 @@ form button:hover {
 
     /* Carrusel principal */
     .swiper {
-        height: 200px; /* Reduce la altura del carrusel en móviles */
+        height: 150px; /* Reduce la altura del carrusel en móviles */
     }
 
     .swiper-slide img {
